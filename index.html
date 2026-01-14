@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvermobiles | Official Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #050a10;
+            font-family: 'Segoe UI', sans-serif;
+            overflow: hidden;
+        }
+
+        .main-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Sidebars with Gold Branding */
+        .sidebar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(180deg, #050a10 0%, #0d1b2a 100%);
+        }
+
+        .ad-box {
+            width: 85%;
+            padding: 20px;
+            border: 2px solid #c5a059;
+            border-radius: 15px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.03);
+            transition: 0.3s;
+        }
+
+        .ad-box:hover {
+            background: rgba(197, 160, 89, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .ad-box h3 { color: #c5a059; margin: 0; font-size: 1.2rem; text-transform: uppercase; }
+        .ad-box p { color: #ffffff; margin: 10px 0; font-size: 0.9rem; }
+        .price { color: #ffd700; font-weight: bold; font-size: 1.4rem; }
+
+        /* Central Image View */
+        .content-center {
+            height: 100vh;
+            background-color: #fff;
+            box-shadow: 0 0 40px rgba(0,0,0,0.9);
+            z-index: 5;
+        }
+
+        .content-center img {
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            text-decoration: none;
+            z-index: 100;
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover { transform: scale(1.1); background-color: #128c7e; }
+
+        @media (max-width: 1100px) { .sidebar { display: none; } }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="ad-box">
+                <h3>Keypad Phones</h3>
+                <p>Special Offer</p>
+                <div class="price">INSTOCK</div>
+            </div>
+            <div class="ad-box">
+                <h3>Display Fix</h3>
+                <p>Genuine Parts</p>
+                <div class="price">₹999*</div>
+            </div>
+        </aside>
+
+        <main class="content-center">
+            <img src="Silvermobiles_2.jpg" alt="Silvermobiles Design">
+        </main>
+
+        <aside class="sidebar">
+            <div class="ad-box">
+                <h3>Buy Phone</h3>
+                <p>With Reasonableprice</p>
+                <div class="price">BEST VAL</div>
+            </div>
+            <div class="ad-box">
+                <h3>Accessories</h3>
+                <p>Buy 1 Get 1</p>
+                <div class="price">FREE</div>
+            </div>
+        </aside>
+    </div>
+
+    <a href="https://wa.me/91900628134" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
